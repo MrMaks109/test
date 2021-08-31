@@ -717,7 +717,7 @@ end;
 
 procedure TForm2.ToolButton6Click(Sender: TObject);
 var
-  i,j:integer;
+  i:integer;
 begin
   if GroupBox1.Visible = True then
   GroupBox1.Visible:=False else

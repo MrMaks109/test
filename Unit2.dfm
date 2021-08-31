@@ -224,6 +224,7 @@
     OptionsEh = [dghFixed3D, dghFrozen3D, dghHighlightFocus, dghClearSelection, dghFitRowHeightToText, dghAutoSortMarking, dghMultiSortMarking, dghRowHighlight, dghDialogFind, dghColumnResize, dghAutoFitRowHeight, dghExtendVertLines]
     ParentFont = False
     ReadOnly = True
+    RowDetailPanel.Active = True
     RowHeight = 4
     RowLines = 1
     SearchPanel.FilterOnTyping = True

@@ -162,15 +162,15 @@ end;
 
 procedure TForm_Login.Edit1KeyPress(Sender: TObject; var Key: Char);
 begin
-  if not (Key in ['0'..'9',  'A'..'Z', 'a'..'z', #8, #32, #13 ]) then
-    begin
-      Key:=#0;
-       label1.Caption:= '¬водите только цифры и ' +#13#10+ 'английские символы.'
-    end else
+  if (CharInSet(Key, ['0'..'9',  'A'..'Z', 'a'..'z', #8, #32, #13, #17, #65, #16 ])) then
     begin
       label1.Caption:= '';
       if (key=#13) then
         Button1.Click;
+    end else
+    begin
+      Key:=#0;
+      label1.Caption:= '¬водите только цифры и ' +#13#10+ 'английские символы.'
     end;
 end;
 
